@@ -111,10 +111,14 @@ class GroceryListItem extends React.Component {
       </ul>
       );
 
+      var data = ['Food', 'Detergent', 'Toilet Paper'];
+
+
       var App = () => (
         <div>
         <h2>Grocery List</h2>
-        <GroceryList todos={['Food', 'Detergent', 'Toilet Paper']}/> // Here we are creating an instance of the `TodoList` component
+        <GroceryList todos={data}/> // Here we are creating an instance of the `TodoList` component
         </div>
         );
+
         ReactDOM.render(<App />, document.getElementById("app"));
